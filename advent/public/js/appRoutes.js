@@ -3,16 +3,16 @@
 
     $routeProvider     
 
-        // advent page that will use the AdventController
-        .when('/advent', {
-            templateUrl: 'views/advent.html',
-            controller: 'AdventController'
-        })
-
         // home page
         .when('/', {
             templateUrl: 'views/home.html',
             controller: 'MainController'
+        })
+
+        // advent page that will use the AdventController
+        .when('/advent', {
+            templateUrl: 'views/advent.html',
+            controller: 'AdventController'
         });
 
     $locationProvider.html5Mode(true);
