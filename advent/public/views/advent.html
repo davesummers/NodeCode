@@ -1,19 +1,15 @@
 <!-- public/views/advent.html -->
-
 <div class="jumbotron text-center">
     <h1>Advent Game Play</h1>
-
     <p>{{ tagline }}</p>
 </div>
-
 <div>
-    <textarea maxlength="20">
-        {{ vm.responseHistory }}
+    <textarea cols=100 rows=15 ng-model=responseHistory> 
     </textarea>
-</div> 
-<!--<div>
+</div>
+<div>
     <form ng-submit="doCmd()">
-    <input data-ng-bind="vm.cmd" class="text" >
-    </input>
+        Enter text and hit enter:
+        <input type="text" ng-model="cmd" name="cmd" />
     </form>
-</div>-->
+</div>

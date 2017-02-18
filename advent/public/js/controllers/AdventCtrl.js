@@ -1,16 +1,16 @@
 // public/js/controllers/AdventCtrl.js
 angular.module('AdventCtrl', []).controller('AdventController', function ($scope) {
 
-    var vm = this;
+    var vm = $scope;
 
-    $scope.tagline = 'Nothing beats a pocket protector!';
+    $scope.tagline = 'A flash from the past!';
 
     vm.responseHistory = "You are at the beginning";
-    vm.cmd;
-    debugger;
-
-    function doCmd() {
+    vm.cmd = 'Enter Command';
+    
+    vm.doCmd = function () {
         debugger;
-        vm.responseHistory += "\n" + cmd;
-    }
+        vm.responseHistory += "\n" + vm.cmd;
+        vm.cmd = '';
+    };
 });
