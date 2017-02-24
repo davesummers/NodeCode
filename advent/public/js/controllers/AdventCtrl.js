@@ -1,9 +1,14 @@
 // public/js/controllers/AdventCtrl.js
-angular.module('AdventCtrl', []).controller('AdventController', function ($scope, $timeout, $GamePlayService) {
+angular.module('AdventCtrl', []).controller('AdventController', function ($scope, $timeout, gameplay) {
 
     var vm = $scope;
 
     $scope.tagline = 'A flash from the past!';
+
+    vm.loadGameMap = function(){
+        debugger;
+        var map = gameplay(get());
+    };
 
     vm.loadGameMap();
 
@@ -24,9 +29,5 @@ angular.module('AdventCtrl', []).controller('AdventController', function ($scope
         vm.responseHistory = "We are in a tunnel, all twisted tunnels" + "\n" + vm.responseHistory;
     };
 
-    vm.loadGameMap= function(){
-        debugger;
-        var map = $gamePlayService(get());
-    };
-
+    
 });

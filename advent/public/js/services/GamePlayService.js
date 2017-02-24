@@ -1,5 +1,5 @@
 // public/js/services/GamePlayService.js
-angular.module('GamePlayService', []).factory('Nerd', ['$http', function($http) {
+angular.module('GamePlayService', []).factory('gameplay', ['$http', function($http) {
 
     return {
         // call to get all nerds
@@ -8,7 +8,7 @@ angular.module('GamePlayService', []).factory('Nerd', ['$http', function($http) 
         },
 
 
-                // these will work when more API routes are defined on the Node side of things
+           // these will work when more API routes are defined on the Node side of things
         // call to POST and create a new nerd
         create : function(nerdData) {
             return $http.post('/api/gameplay', nerdData);

@@ -12,6 +12,7 @@ var Nerd = require('./models/advent');
         // sample api route
         app.get('/api/gameplay', function(req, res) {
             // use mongoose to get all nerds in the database
+            debugger;
             Nerd.find(function(err, nerds) {
 
                 // if there is an error retrieving, send the error. 
