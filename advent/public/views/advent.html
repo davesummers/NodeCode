@@ -1,15 +1,16 @@
 <!-- public/views/advent.html -->
 <div class="jumbotron text-center">
-    <h1>Advent Game Play</h1>
+    <h2>Advent Game Play</h2>
     <p>{{ tagline }}</p>
 </div>
 <div>
-    <textarea cols=100 rows=15 ng-model=responseHistory> 
-    </textarea>
+    <textarea readonly=true autoscroll=true id='commandHistory' cols=100 rows=10 ng-model=commandHistory></textarea>
 </div>
 <div>
     <form ng-submit="doCmd()">
         Enter text and hit enter:
         <input type="text" ng-model="cmd" name="cmd" />
     </form>
+    <textarea cols=100 rows=15 ng-model=responseHistory> 
+    </textarea>
 </div>
