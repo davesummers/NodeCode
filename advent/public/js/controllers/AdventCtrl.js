@@ -7,7 +7,7 @@ angular.module('AdventCtrl', []).controller('AdventController', function ($scope
 
     vm.loadGameMap = function(){
         debugger;
-        var map = gameplay(get());
+        var map = gameplay.get();
     };
 
     vm.loadGameMap();
