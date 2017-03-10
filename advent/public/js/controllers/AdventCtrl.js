@@ -14,7 +14,7 @@ angular.module('AdventCtrl', []).controller('AdventController', function ($scope
 
     vm.responseHistory = "You are at the beginning";
     vm.commandHistory = '';
-    vm.cmd = 'Enter Command';
+    //vm.cmd = '';
     
     vm.doCmd = function () {
        // debugger;
