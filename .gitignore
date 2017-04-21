@@ -1,0 +1,2 @@
+# exclude VS code settings
+** .vscode/**
